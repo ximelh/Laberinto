@@ -298,5 +298,7 @@ public class MyWorld extends World
         cereza.setLocation(616,514);
         mochi.setLocation(12,86);
         banano.setLocation(60,141);
+        mochi.setLocation(16,100);
+        cereza.setLocation(617,502);
     }
 }

@@ -14,6 +14,25 @@ public class Mochi extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("right")) 
+        {
+            setRotation(0);
+            move(4);
+        }
+        if(Greenfoot.isKeyDown("left")) 
+        {
+            setRotation(180);
+            move(4);
+        }
+        if(Greenfoot.isKeyDown("up")) 
+        {
+            setRotation(270);
+            move(4);
+        }
+        if(Greenfoot.isKeyDown("down")) 
+        {
+            setRotation(90);
+            move(4);
+        }
     }
 }

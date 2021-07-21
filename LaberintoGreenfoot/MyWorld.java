@@ -294,11 +294,10 @@ public class MyWorld extends World
         addObject(cereza3,10*50,12*50);
         Cereza cereza4 = new Cereza();
         addObject(cereza4,4*50,3*50);
-        cereza.setLocation(640,496);
-        cereza.setLocation(616,514);
-        mochi.setLocation(12,86);
-        banano.setLocation(60,141);
-        mochi.setLocation(16,100);
-        cereza.setLocation(617,502);
+
+        cereza.setLocation(619,510);
+        mochi.setLocation(34,104);
+        cereza.setLocation(627,512);
+        mochi.setLocation(26,98);
     }
 }

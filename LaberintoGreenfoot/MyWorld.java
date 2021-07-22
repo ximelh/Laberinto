@@ -256,8 +256,6 @@ public class MyWorld extends World
         addObject(bloque112,12*50,13*50);
         Bloque bloque113 = new Bloque();
         addObject(bloque113,13*50,13*50);
-        Mochi mochi = new Mochi();
-        addObject(mochi,1*50,2*50);
         Arándano arándano = new Arándano();
         addObject(arándano,3*50,1*50);
         Arándano arándano2 = new Arándano();
@@ -278,9 +276,7 @@ public class MyWorld extends World
         addObject(cereza4,4*50,3*50);
 
         cereza.setLocation(619,510);
-        mochi.setLocation(34,104);
         cereza.setLocation(627,512);
-        mochi.setLocation(26,98);
         cereza.setLocation(629,509);
         cereza.setLocation(628,489);
         cereza.setLocation(622,497);
@@ -299,5 +295,17 @@ public class MyWorld extends World
         addObject(naranja5,397,594);
         Naranja naranja6 = new Naranja();
         addObject(naranja6,145,503);
+        bloque16.setLocation(13,70);
+        removeObject(bloque16);
+        removeObject(bloque17);
+        removeObject(bloque30);
+        Bloque bloque114 = new Bloque();
+        addObject(bloque114,50,50);
+        Bloque bloque115 = new Bloque();
+        addObject(bloque115,0,50);
+        Bloque bloque116 = new Bloque();
+        addObject(bloque116,0,149);
+        Mochi mochi = new Mochi();
+        addObject(mochi,19,98);
     }
 }

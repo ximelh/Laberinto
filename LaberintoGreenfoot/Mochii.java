@@ -14,6 +14,6 @@ public class Mochii extends mover
      */
     public void act()
     {
-        moveAround();
+        mover();
     }
 }

@@ -16,9 +16,47 @@ public class mover extends Actor
     {
         // Add your action code here.
     }
-    public void moveAround()
+    public void deslizar()
     {
+        int x = getX();
+        int y = getY();
         if(Greenfoot.isKeyDown("right")) 
+        {
+            setLocation(x + 4, y);
+            if(paredes())
+            {
+                setLocation(x - 4, y);
+            }
+        }
+        if(Greenfoot.isKeyDown("left")) 
+        {
+            setLocation(x - 4, y);
+            if(paredes())
+            {
+                setLocation(x + 4, y);
+            }
+        }
+        if(Greenfoot.isKeyDown("up")) 
+        {
+            setLocation(x, y - 4);
+            if(paredes())
+            {
+                setLocation(x, y + 4);
+            }
+        }
+        if(Greenfoot.isKeyDown("down")) 
+        {
+            setLocation(x, y + 4);
+            if(paredes())
+            {
+                setLocation(x, y - 4);
+            }
+        }
+    }
+    public void mover()
+    {
+        
+      if(Greenfoot.isKeyDown("right")) 
         {
             setRotation(0);
             move(4);
@@ -37,6 +75,46 @@ public class mover extends Actor
         {
             setRotation(90);
             move(4);
+        }  
+    }
+    public boolean paredes()
+    {
+        if (isTouching(Bloque.class))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
+    public void eat()
+    {
+        Actor Naranja;
+        Naranja = getOneObjectAtOffset(0,0, Naranja.class);
+        if (Naranja != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(Naranja);
+        }
+        Actor Arandano;
+        Arandano = getOneObjectAtOffset(0,0, Arándano.class);
+        if (Arandano != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(Arandano);
+        }
+        Actor Cereza;
+        Cereza = getOneObjectAtOffset(0,0, Cereza.class);
+        if (Cereza != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(Cereza);
+        }
+        }
 }
+
+

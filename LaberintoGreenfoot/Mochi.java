@@ -14,6 +14,7 @@ public class Mochi extends mover
      */
     public void act()
     {
-        moveAround();
+        deslizar();
+        eat();
         }        
 }

@@ -108,16 +108,18 @@ public class mover extends Actor
             world.removeObject(Arandano);
             Greenfoot.playSound("Miau.wav");
         }
-        Actor Cereza;
-        Cereza = getOneObjectAtOffset(0,0, Cereza.class);
-        if (Cereza != null)
+        }
+    public void Ganar()
+    {
+        if(isTouching(Cereza.class))
         {
-            World world;
-            world = getWorld();
-            world.removeObject(Cereza);
-            Greenfoot.playSound("Miau.wav");
+            World myWorld = getWorld();
+            Ganaste ganaste = new Ganaste();
+            myWorld.addObject(ganaste, 325, 350);
+            myWorld.removeObject(this);   
         }
         }
-}
+    }
+    
 
 

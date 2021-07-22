@@ -268,24 +268,6 @@ public class MyWorld extends World
         addObject(arándano4,1*50,12*50);
         Arándano arándano5 = new Arándano();
         addObject(arándano5,12*50,8*50);
-        Banano banano = new Banano();
-        addObject(banano,1*50,3*50);
-        Banano banano2 = new Banano();
-        addObject(banano2,1*50,7*50);
-        Banano banano3 = new Banano();
-        addObject(banano3,7*50,1*50);
-        Banano banano4 = new Banano();
-        addObject(banano4,5*50,5*50);
-        Banano banano5 = new Banano();
-        addObject(banano5,5*50,10*50);
-        Banano banano6 = new Banano();
-        addObject(banano6,2*50,9*50);
-        Banano banano7 = new Banano();
-        addObject(banano7,10*50,6*50);
-        Banano banano8 = new Banano();
-        addObject(banano8,10*50,9*50);
-        Banano banano9 = new Banano();
-        addObject(banano9,8*50,11*50);
         Cereza cereza = new Cereza();
         addObject(cereza,13*50,10*50);
         Cereza cereza2 = new Cereza();
@@ -299,5 +281,23 @@ public class MyWorld extends World
         mochi.setLocation(34,104);
         cereza.setLocation(627,512);
         mochi.setLocation(26,98);
+        cereza.setLocation(629,509);
+        cereza.setLocation(628,489);
+        cereza.setLocation(622,497);
+        removeObject(cereza4);
+        removeObject(cereza2);
+        removeObject(cereza3);
+        Naranja naranja = new Naranja();
+        addObject(naranja,199,150);
+        Naranja naranja2 = new Naranja();
+        addObject(naranja2,54,302);
+        Naranja naranja3 = new Naranja();
+        addObject(naranja3,594,192);
+        Naranja naranja4 = new Naranja();
+        addObject(naranja4,355,396);
+        Naranja naranja5 = new Naranja();
+        addObject(naranja5,397,594);
+        Naranja naranja6 = new Naranja();
+        addObject(naranja6,145,503);
     }
 }

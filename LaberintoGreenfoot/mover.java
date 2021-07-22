@@ -97,6 +97,7 @@ public class mover extends Actor
             World world;
             world = getWorld();
             world.removeObject(Naranja);
+            Greenfoot.playSound("Miau.wav");
         }
         Actor Arandano;
         Arandano = getOneObjectAtOffset(0,0, Arándano.class);
@@ -105,6 +106,7 @@ public class mover extends Actor
             World world;
             world = getWorld();
             world.removeObject(Arandano);
+            Greenfoot.playSound("Miau.wav");
         }
         Actor Cereza;
         Cereza = getOneObjectAtOffset(0,0, Cereza.class);
@@ -113,6 +115,7 @@ public class mover extends Actor
             World world;
             world = getWorld();
             world.removeObject(Cereza);
+            Greenfoot.playSound("Miau.wav");
         }
         }
 }

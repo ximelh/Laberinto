@@ -1,11 +1,11 @@
 #Greenfoot project file
-class.Ar\u00E1ndano.image=plum.png
-class.Bloque.image=Wall.jpg
-class.Cereza.image=cherries.png
-class.Ganaste.image=Felicidades_adobespark.png
-class.Mochi.image=Webp.net-resizeimage.png
-class.MyWorld.image=sand2.jpg
-class.Naranja.image=orange.png
+class.Ar\u00E1ndano.image=Webp.net-resizeimage\ (9).png
+class.Bloque.image=Webp.net-resizeimage\ (3).png
+class.Cereza.image=Webp.net-resizeimage\ (8).png
+class.Ganaste.image=Webp.net-resizeimage\ (11).png
+class.Mochi.image=Webp.net-resizeimage\ (1).png
+class.MyWorld.image=rm21-wood-110-b.jpg
+class.Naranja.image=Webp.net-resizeimage\ (10).png
 dependency1.from=MyWorld
 dependency1.to=puntos
 dependency1.type=UsesDependency

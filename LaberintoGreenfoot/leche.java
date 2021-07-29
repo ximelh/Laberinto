@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Arándano extends Actor
+public class leche extends Actor
 {
     /**
      * Act - do whatever the Arándano wants to do. This method is called whenever

@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Cereza here.
+ * Write a description of class Naranja here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cereza extends Actor
+public class Pez extends Actor
 {
     /**
-     * Act - do whatever the Cereza wants to do. This method is called whenever
+     * Act - do whatever the Naranja wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()

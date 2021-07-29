@@ -90,34 +90,34 @@ public class mover extends Actor
     }
     public void eat()
     {
-        Actor Naranja;
-        Naranja = getOneObjectAtOffset(0,0, Naranja.class);
-        if (Naranja != null)
+        Actor Pez;
+        Pez = getOneObjectAtOffset(0,0, Pez.class);
+        if (Pez != null)
         {
             World world;
             world = getWorld();
-            world.removeObject(Naranja);
+            world.removeObject(Pez);
             Greenfoot.playSound("Miau.wav");
             MyWorld MyWorld = (MyWorld)world;
             puntos puntos = MyWorld.getPuntos();
-            puntos.agregarpuntosnar();
+            puntos.agregarpuntospez();
         }
-        Actor Arandano;
-        Arandano = getOneObjectAtOffset(0,0, Arándano.class);
-        if (Arandano != null)
+        Actor leche;
+        leche = getOneObjectAtOffset(0,0, leche.class);
+        if (leche != null)
         {
             World world;
             world = getWorld();
-            world.removeObject(Arandano);
+            world.removeObject(leche);
             Greenfoot.playSound("Miau.wav");
             MyWorld MyWorld = (MyWorld)world;
             puntos puntos = MyWorld.getPuntos();
-            puntos.agregarpuntosara();
+            puntos.agregarpuntoslec();
         }
         }
     public void Ganar()
     {
-        if(isTouching(Cereza.class))
+        if(isTouching(Macaroon.class))
         {
             World myWorld = getWorld();
             Ganaste ganaste = new Ganaste();

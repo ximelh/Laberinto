@@ -17,7 +17,7 @@ public class puntos extends Actor
      */
     public void act()
     {
-        setImage(new GreenfootImage("Puntaje :" + puntos, 24, Color.GREEN, Color.BLACK));
+        setImage(new GreenfootImage("Puntaje :" + puntos, 24, Color.PINK, Color.BLACK));
     }
     public void agregarpuntosnar()
     {

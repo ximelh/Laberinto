@@ -14,7 +14,7 @@ public class mover extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+    
     }
     public void deslizar()
     {
@@ -98,6 +98,9 @@ public class mover extends Actor
             world = getWorld();
             world.removeObject(Naranja);
             Greenfoot.playSound("Miau.wav");
+            MyWorld MyWorld = (MyWorld)world;
+            puntos puntos = MyWorld.getPuntos();
+            puntos.agregarpuntosnar();
         }
         Actor Arandano;
         Arandano = getOneObjectAtOffset(0,0, Arándano.class);
@@ -107,6 +110,9 @@ public class mover extends Actor
             world = getWorld();
             world.removeObject(Arandano);
             Greenfoot.playSound("Miau.wav");
+            MyWorld MyWorld = (MyWorld)world;
+            puntos puntos = MyWorld.getPuntos();
+            puntos.agregarpuntosara();
         }
         }
     public void Ganar()

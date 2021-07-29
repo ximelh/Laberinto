@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    puntos puntos = new puntos();
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +19,11 @@ public class MyWorld extends World
         super(650, 650, 1); 
         prepare();
     }
+
+    public puntos getPuntos()
+    {
+        return puntos; 
+    }
     
     /**
      * Prepare the world for the start of the program.
@@ -26,6 +31,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
+        addObject(puntos, 250, 35);
         Bloque bloque = new Bloque();
         addObject(bloque,0*50,0*50);
         Bloque bloque2 = new Bloque();
@@ -307,5 +313,6 @@ public class MyWorld extends World
         addObject(bloque116,0,149);
         Mochi mochi = new Mochi();
         addObject(mochi,19,98);
+    
     }
 }

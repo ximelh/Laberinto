@@ -30,6 +30,7 @@ public class MyWorld extends World
      * That is: create the initial objects and add them to the world.
      */
     private void prepare()
+    //Este código permite generar el laberinto.
     {
         addObject(puntos, 250, 35);
         Bloque bloque = new Bloque();

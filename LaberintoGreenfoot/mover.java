@@ -122,6 +122,7 @@ public class mover extends Actor
         }
         }
     public void Ganar()
+    //Este método permite mostrar una imagen que haga saber al jugador que el juego terminó
     {
         if(isTouching(Macaroon.class))
         {

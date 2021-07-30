@@ -7,6 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class mover extends Actor
+//Esta clase permite que el actor principal del laberinto, en este caso "Chococat", pueda moverse e interactuar con los demás actores sin problema.
 {
     /**
      * Act - do whatever the mover wants to do. This method is called whenever
@@ -17,6 +18,7 @@ public class mover extends Actor
     
     }
     public void deslizar()
+    //Este método permite que el personaje se mueva sin cambiar de dirección o rotar.
     {
         int x = getX();
         int y = getY();
@@ -54,6 +56,7 @@ public class mover extends Actor
         }
     }
     public void mover()
+    //Este método permite que el personaje se mueva, sin emargo, la imagen rota con cada movimiento
     {
         
       if(Greenfoot.isKeyDown("right")) 
@@ -78,6 +81,8 @@ public class mover extends Actor
         }  
     }
     public boolean paredes()
+    //Este método tiene como función identificar si el actor principal se encuentra en contacto con las paredes del laberinto o no. De esta manera en otro
+    //método(deslizar), se puede evitar que el personaje camine sobre las paredes.
     {
         if (isTouching(Bloque.class))
         {
@@ -89,6 +94,7 @@ public class mover extends Actor
         }
     }
     public void eat()
+    //Este método permite al actor principal interactuar con 
     {
         Actor Pez;
         Pez = getOneObjectAtOffset(0,0, Pez.class);

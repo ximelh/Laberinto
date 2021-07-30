@@ -19,12 +19,15 @@ public class puntos extends Actor
     {
         setImage(new GreenfootImage("Puntaje :" + puntos, 24, Color.PINK, Color.BLACK));
     }
+    //Este código genera el contador de puntos del juego.
     public void agregarpuntospez()
     {
         puntos = puntos + pez;
     }
+    //Este código permite agregar los puntos designados al actor "pez".
     public void agregarpuntoslec()
     {
         puntos = puntos + lec;
     }
+    //Permite agregar los puntos designados al actor "leche".
 }
